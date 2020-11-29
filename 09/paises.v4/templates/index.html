@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Ejemplo con Flask: Paises</title>
+</head>
+<body>
+    {{ num_paises }} paises:
+    <HR>
+    <TABLE border=1>
+        <TR>
+            <TD><B>País</B></TD>
+        </TR>
+        {% for pais in paises %}
+            <TR>
+                <TD><A HREF="pais/{{ pais }}/">{{ pais }}</A></TD>
+            </TR>
+        {% endfor %}
+    </TABLE>
+</body>
+</html>
